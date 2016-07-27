@@ -1,6 +1,7 @@
 package com.abc.app.memberapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,15 +22,17 @@ public class MainActivity extends Activity implements View.OnClickListener{
         bt_login = (Button) findViewById(R.id.bt_login);
         bt_join = (Button) findViewById(R.id.bt_join);
         tv_msg = (TextView) findViewById(R.id.tv_msg);
+        bt_login.setOnClickListener(this);
+        bt_join.setOnClickListener(this);
     }
-
-    @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.bt_join:break;
+            case R.id.bt_join:
+                Toast.makeText(MainActivity.this,"회원가입화면",Toast.LENGTH_LONG).show();
+                startActivity(new Intent(this,JoinActivity.class));
+                break;
             case R.id.bt_login:
-                Toast.makeText(MainActivity.this,"ID : "+et_id.getText().toString(),Toast.LENGTH_LONG).show();
-                Toast.makeText(MainActivity.this,"PW : "+et_pw.getText().toString(),Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"ID : "+et_id.getText().toString()+"PW : "+et_pw.getText().toString(),Toast.LENGTH_LONG).show();
                 break;
 
         }

@@ -6,16 +6,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:hint="ID : "
         android:id="@+id/et_id"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:hint="Password : "
         android:id="@+id/et_pw"
         />
@@ -23,8 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="50dp"
-        android:layout_marginTop="50dp"
-        android:background="#ffee00"
+        android:layout_marginTop="30dp"
+        android:background="#c7c8cc"
         android:id="@+id/bt_login"
         android:text="로그인"/>
     <TextView
@@ -32,15 +30,16 @@
         android:layout_height="wrap_content"
         android:textSize="50dp"
         android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
+        android:hint="계정이 없다면 생성먼저 하세요"
         android:id="@+id/tv_msg"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="50dp"
-        android:layout_marginTop="50dp"
-        android:background="#003cff"
+        android:layout_marginTop="40dp"
+        android:background="#FFC7C8CC"
         android:id="@+id/bt_join"
         android:text="회원가입"/>
 
