@@ -6,14 +6,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:hint="ID : "
         android:id="@+id/et_id"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:hint="Password : "
         android:id="@+id/et_pw"
         />
@@ -21,14 +21,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:background="#c7c8cc"
         android:id="@+id/bt_login"
         android:text="로그인"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="50dp"
+        android:textSize="30dp"
         android:gravity="center"
         android:layout_marginTop="30dp"
         android:hint="계정이 없다면 생성먼저 하세요"
@@ -38,9 +38,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:background="#FFC7C8CC"
         android:id="@+id/bt_join"
         android:text="회원가입"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFC7C8CC"
+        android:id="@+id/bt_img"
+        android:text="이미지보러가기"/>
 </LinearLayout>

@@ -12,4 +12,5 @@ public interface MemberService {
     public MemberBean findById(String id);
     public void logout(MemberBean mem);
     public List<?> list();
+    public MemberBean show();
 }

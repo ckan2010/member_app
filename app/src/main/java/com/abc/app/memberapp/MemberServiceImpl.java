@@ -1,20 +1,19 @@
 package com.abc.app.memberapp;
 
+import android.content.Context;
+
 import java.util.List;
 
 /**
  * Created by ckan on 2016-07-27.
  */
 public class MemberServiceImpl implements MemberService{
-    private MemberDAO dao = MemberDAO.getInstance(); // 싱글톤 패턴
-    private MemberBean session;
-    private MemberBean s;
-    private static MemberServiceImpl instance = new MemberServiceImpl();
-    public static MemberServiceImpl getInstance() {
-        return instance;
+    MemberDAO dao;
+    MemberBean session;
+    public MemberServiceImpl(Context context) {
+        dao = new MemberDAO(context);
     }
-    private MemberServiceImpl() {
-    }
+
     @Override
     public String regist(MemberBean stu) {
           return (dao.insert(stu) == 1)?"회원가입 축하합니다.":"회원가입 실패";
@@ -54,5 +53,8 @@ public class MemberServiceImpl implements MemberService{
                 ) {
             session = null;
         }
+    }
+    public MemberBean show() {
+        return session;
     }
 }
