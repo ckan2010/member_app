@@ -1,18 +1,11 @@
 package com.abc.app.memberapp;
 
 /**
- * Created by ckan on 2016-07-27.
+ * Created by hb on 2016-07-27.
  */
 public class MemberBean {
-    private String name,id,pw,ssn,email,phone;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    private String id,pw,name,ssn,email,phone,profile;
+    private int photo;
 
     public String getId() {
         return id;
@@ -28,6 +21,14 @@ public class MemberBean {
 
     public void setPw(String pw) {
         this.pw = pw;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getSsn() {
@@ -52,5 +53,21 @@ public class MemberBean {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public int getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(int photo) {
+        this.photo = photo;
+    }
+
+    public String getProfile() {
+        return profile;
+    }
+
+    public void setProfile(String profile) {
+        this.profile = profile;
     }
 }
